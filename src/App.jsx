@@ -17,7 +17,7 @@ const App = () => {
       <section>
         <Header />
       </section>
-      <section>
+      <section className={styles.employeeCardDisplay}>
        {employees.map(getCardJsx)}
       </section>
     </>
