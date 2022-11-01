@@ -1,9 +1,27 @@
-import styles from './App.module.scss';
+import styles from "./App.module.scss";
+import Counter from "./Components/Counter";
+import EmployeeCard from "./Components/EmployeeCard";
+import Header from "./Components/Header";
+import employees from './Components/Data/EmployeeList'
 
 const App = () => {
+
+  const getCardJsx = (employee) => 
+    <div  key={employee.id}>
+      <EmployeeCard employee={employee} />
+    </div>
+  
+
   return (
-   <p className={styles.para}>working</p>
+    <>
+      <section>
+        <Header />
+      </section>
+      <section>
+       {employees.map(getCardJsx)}
+      </section>
+    </>
   );
-}
+};
 
 export default App;
