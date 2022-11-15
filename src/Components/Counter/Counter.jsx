@@ -12,7 +12,7 @@ const Counter = () => {
         <button className={Styles.button} onClick={() => setCount(count - 1)}>
           -
         </button>
-        <p>{count}</p>
+        <p data-testid="currentCount">{count}</p>
         <button className={Styles.button} onClick={() => setCount(count + 1)}>
           +
         </button>

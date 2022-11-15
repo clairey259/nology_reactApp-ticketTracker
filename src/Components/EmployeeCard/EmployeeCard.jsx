@@ -8,8 +8,8 @@ const EmployeeCard = (props) => {
   return (
     <>
       <div className={Styles.card}>
-        <h2>Name: {name}</h2>
-        <h3>Role: {role}</h3>
+        <h2 data-testid="name">Name: {name}</h2>
+        <h3 data-testid="role">Role: {role}</h3>
         <section>
           <Counter />
         </section>
